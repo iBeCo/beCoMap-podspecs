@@ -10,9 +10,9 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "11.0"
   spec.ios.deployment_target = '11.0'
   spec.source       = { :git => "https://github.com/iBeCo/beCo-iOS-SDK.git", :tag => "#{spec.version}" }
-  # spec.source_files  = "beCoMap/*/*.{swift}"
-  # spec.resources = "beCoMap/beCoMap/*.{png,swift,js,storyboard,css,map,html,svg,ico}"
-  spec.requires_arc = true
+  spec.source_files  = "beCoMap/*/*.{h}"
+  spec.resources = "beCoMap/beCoMap/*.{png,swift,js,storyboard,css,map,html,svg,ico}"
+  # spec.requires_arc = true
   spec.dependency 'SwiftProtobuf'
   spec.swift_version = "5.0"
 end

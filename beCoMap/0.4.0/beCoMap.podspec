@@ -13,6 +13,6 @@ Pod::Spec.new do |spec|
   spec.source = { :http => "https://beco-sdks.s3.ap-south-1.amazonaws.com/ios/beCoMap.zip"}
   spec.requires_arc = true
   spec.exclude_files = "Classes/Exclude"
-  spec.dependency 'SwiftProtobuf'
+  spec.dependency 'SwiftProtobuf', '~> 1.6'
   spec.swift_version = "5.0"
 end
